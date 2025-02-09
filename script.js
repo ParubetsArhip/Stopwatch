@@ -82,6 +82,7 @@ function fnResults() {
    let block = document.createElement('div')
    results.append(block)
    block.classList.add('block-padding')
-   block.innerText = `Result-${resultNumber} ${hours}:${minutes}:${seconds}:${milliseconds}`
+   // block.innerText = `Result-${resultNumber} ${hours}:${minutes}:${seconds}:${milliseconds}`
+   block.innerText = `Result-${resultNumber} ${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}:${milliseconds < 10 ? '0' + milliseconds : milliseconds}`
    interval = setInterval(startTimer, 10)
 }
