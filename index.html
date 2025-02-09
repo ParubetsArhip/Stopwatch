@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 id="headline">Stopwatch</h1>
+    <div id="countdown">
+        <ul>
+            <li><span id="hours">00</span>Hours</li>
+            <li><span id="minutes">00</span>Minutes</li>
+            <li><span id="seconds">00</span>Seconds</li>
+            <li><span id="milliseconds">00</span>Milliseconds</li>
+        </ul>
+    </div>
+    <div class="buttons">
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Stop</button>
+        <button id="reset" class="btn">Reset</button>
+        <button id="circle" class="btn">Circle</button>
+    </div>
+</div>
+
+<div class="results_block">
+    <div class="results_title">Results</div>
+    <div id="results" class="results"></div>
+</div>
+
+</body>
+
+</html>
